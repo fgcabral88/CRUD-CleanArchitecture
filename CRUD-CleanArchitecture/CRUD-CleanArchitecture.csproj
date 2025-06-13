@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>CRUD_CleanArchitecture</RootNamespace>
+    <UserSecretsId>b799f0db-b3ac-45b6-90a7-f3b9833416a6</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1-Preview.1" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="9.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="9.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CRUD-CleanArchitecture.Application\CRUD-CleanArchitecture.Application.csproj" />
+    <ProjectReference Include="..\CRUD-CleanArchitecture.Infrastructure\CRUD-CleanArchitecture.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

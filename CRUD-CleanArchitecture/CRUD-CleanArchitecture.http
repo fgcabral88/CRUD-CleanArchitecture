@@ -1,0 +1,6 @@
+@CRUD_CleanArchitecture_HostAddress = http://localhost:5133
+
+GET {{CRUD_CleanArchitecture_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
